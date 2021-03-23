@@ -1,0 +1,281 @@
+set autoread
+set hidden
+set nowrap
+set clipboard=unnamedplus
+set showmatch
+set foldmethod=indent
+set foldnestmax=2
+set showmode
+set showcmd
+filetype plugin indent on
+syntax on
+set complete-=i
+set smarttab
+set hlsearch
+set tabstop=4
+set autoindent
+set nocompatible
+set nu
+set encoding=utf-8 "UTF-8 character encoding
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set ruler
+set formatoptions=croq
+set ignorecase
+set smartcase
+set incsearch
+set scrolloff=5
+set wildmode=longest,list
+set lazyredraw
+set wrap
+set backspace=indent,eol,start
+set linebreak
+set ttyfast
+set nostartofline
+
+if &t_Co == 8 && $TERM !~# '^Eterm'
+  set t_Co=16
+endif
+
+if !has('nvim') && &ttimeoutlen == -1
+  set ttimeout
+  set ttimeoutlen=100
+endif
+
+" For conceal markers.
+if has('conceal')
+    set conceallevel=2 concealcursor=niv
+endif
+
+"Mappings 
+"Folding 
+noremap <space> za
+vnoremap <space> zf
+
+"Lining things up
+nnoremap <Leader>a :Tabularize /&<CR>
+vnoremap <Leader>a :Tabularize /&<CR>
+
+"Smart relative numbering 
+set number relativenumber
+set nu rnu
+call plug#begin('~/.local/share/nvim/site/plugged')
+
+"Distraction-Free writing 
+Plug 'junegunn/goyo.vim'
+
+"Snips
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+"Auto-completion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" Python source for deoplete
+Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+
+" Insert mode completion
+Plug 'ervandew/supertab'
+
+"{{ Python-related plugins
+" Python completion, goto definition etc.
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+
+" Python syntax highlighting and more
+Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+
+" Python indent (follows the PEP8 style)
+Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}
+"}}
+
+"{{ File editting plugin
+" Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet-snippets'
+
+"{{ Search related plugins
+" Super fast movement with vim-sneak
+Plug 'justinmk/vim-sneak'
+
+Plug 'easymotion/vim-easymotion'
+
+" Improve vim incsearch, clear search highlight automatically
+Plug 'haya14busa/is.vim'
+Plug 'PeterRincker/vim-searchlight'
+
+" Show match number for incsearch
+Plug 'osyo-manga/vim-anzu'
+"}}
+
+" Highlight URLs inside vim
+Plug 'itchyny/vim-highlighturl'
+
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+
+
+" Comment plugin
+Plug 'tpope/vim-commentary'
+
+" Autosave files on certain events
+Plug '907th/vim-auto-save'
+
+" graphcial undo history, see https://github.com/mbbill/undotree
+Plug 'mbbill/undotree'
+
+" Add indent object for vim (useful for languages like Python)
+Plug 'michaeljsmith/vim-indent-object'
+
+"Matching Parens
+Plug 'tpope/vim-surround' 
+Plug 'jiangmiao/auto-pairs'
+
+""Status bar
+
+"Plugin 'dylanaraps/wal'
+"
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+"Tags 
+Plug 'ludovicchabant/vim-gutentags'
+
+"Better star search
+Plug 'nelstrom/vim-visual-star-search'
+
+"Highlight yanked region
+Plug 'machakann/vim-highlightedyank'
+
+"Matching stuff intelligently
+Plug 'andymass/vim-matchup'
+
+"Latex plugins 
+Plug 'lervag/vimtex'
+Plug 'Konfekt/FastFold'
+
+"Line things up nicely 
+Plug 'godlygeek/tabular'
+
+" Theme
+Plug 'KeitaNakamura/neodark.vim'
+
+call plug#end()
+
+"Status line 
+"{{
+let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" Buffer number display format
+let g:airline#extensions#tabline#buffer_nr_format = '%s. '
+
+" Whether to show function or other tags on status line
+let g:airline#extensions#tagbar#enabled = 1
+" Skip empty sections if there are nothing to show,
+let g:airline_skip_empty_sections = 1
+
+" Whether to use powerline symbols, see https://goo.gl/XLY19H.
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+ "Only show git hunks which are non-zero
+let g:airline#extensions#hunks#non_zero_only = 1
+
+" Speed up airline
+let g:airline_highlighting_cache = 1
+"}}
+
+"" Start deoplete
+let g:deoplete#enable_at_startup = 1
+
+""open NerdTree 
+map <C-n> :NERDTreeToggle<CR>
+
+""Map UndotreeToggle to F5
+nnoremap <F5> :UndotreeToggle<cr>
+
+"{{ Python-related
+" Whether to show doc string
+let g:deoplete#sources#jedi#show_docstring = 0
+
+" For large package, set autocomplete wait time longer
+let g:deoplete#sources#jedi#server_timeout = 50
+
+" Ignore jedi errors during completion
+let g:deoplete#sources#jedi#ignore_errors = 1
+
+"jedi-vim settings
+" Disable autocompletion, because I use deoplete for auto-completion
+let g:jedi#completions_enabled = 0
+
+" Whether to show function call signature
+let g:jedi#show_call_signatures = '0'
+
+"Tex stuff
+let g:tex_conceal = ''
+let g:vimtex_fold_manual = 1
+let g:vimtex_latexmk_continuous = 1
+let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_quickfix_open_on_warning = 0
+call deoplete#custom#var('omni', 'input_patterns', {
+            \ 'tex': g:vimtex#re#deoplete
+            \})
+
+au FileType tex let b:AutoPairs = AutoPairsDefine({'$': '$'})
+
+" Track the engine.
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+"Focused writing with Goyo + Spell check 
+function! s:goyo_enter()
+  MBEClose
+  wincmd w
+endfunction
+
+"Set mapping for Goyo
+
+autocmd! User GoyoEnter call <SID>goyo_enter()
+set spelllang=en 
+set spellfile=$HOME/.config/nvim/en.utf-8.add 
+autocmd BufRead,BufNewFile *.txt set spell 
+
+noremap <F2> :Goyo
+
+"Theme stuff 
+set background=dark
+let g:neodark#terminal_transparent = 1 " default: 0
+colorscheme neodark
+

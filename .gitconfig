@@ -1,0 +1,7 @@
+[user]
+	name = iamthem
+	email = lslopez@andrew.cmu.edu
+[color]
+	ui = auto
+[credential]
+	helper = cache
