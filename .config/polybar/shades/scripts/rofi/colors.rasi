@@ -2,10 +2,10 @@
 
 * {
   al:    #00000000;
-  bg:    #010001FF;
-  bg1:   #663A8CFF;
-  bg2:   #80817EFF;
-  bg3:   #663A8CFF;
-  bg4:   #80817EFF;
-  fg:    #c09ddbFF;
+  bg:    #060210FF;
+  bg1:   #88517DFF;
+  bg2:   #5A2C6BFF;
+  bg3:   #88517DFF;
+  bg4:   #5A2C6BFF;
+  fg:    #d5aecbFF;
 }

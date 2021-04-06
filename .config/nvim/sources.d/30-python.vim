@@ -33,6 +33,8 @@ let g:jupytext_style = 'hydrogen'
 " Send cell to IronRepl and move to next cell.
 " Depends on the text object defined in vim-textobj-hydrogen
 " You first need to be connected to IronRepl
+" [h takes you to previous cell
+" ]h takes you to next cell
 nmap ]x ctrih]h<CR><CR>
 
 luafile $HOME/.config/nvim/plugins.lua
