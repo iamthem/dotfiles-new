@@ -149,6 +149,12 @@ bindkey '^t' autosuggest-toggle
 # ADD TO EXECUTION PATH
 #=================================
 export PATH=$PATH:/home/junaikin/.cargo/bin:/home/junaikin/.local/bin
+# Docker socket environment variable
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
+# SHELL THEME
+#=================================
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 

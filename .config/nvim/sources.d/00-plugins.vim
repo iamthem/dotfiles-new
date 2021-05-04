@@ -24,6 +24,10 @@ Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}  " Python indent (follow
 Plug 'jalvesaq/vimcmdline'                               " Live REPL
 Plug 'sansyrox/vim-python-virtualenv'
 "==================================================
+"" Lisp  
+"==================================================
+Plug 'kovisoft/slimv'
+"==================================================
 "" Jupyter 
 "==================================================
 Plug 'kana/vim-textobj-user'
