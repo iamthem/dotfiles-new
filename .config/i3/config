@@ -180,7 +180,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
 #startup execs
 exec --no-startup-id compton 
 exec_always --no-startup-id ~/.config/i3/init.sh 

@@ -63,3 +63,9 @@ nmap <expr> n sneak#is_sneaking() ? '<Plug>Sneak_;' : 'n'
 "==================================================
 "Exit terminal with <Esc>
 tnoremap <Esc> <C-\><C-n>       
+
+"==================================================
+" Jump to end and beginning of lines in insert mode 
+"==================================================
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0

@@ -1,4 +1,4 @@
-source /usr/share/zsh/plugins/zsh-autosuggestions-git/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -20,7 +20,7 @@ fi
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
+HISTSIZE=20000
 SAVEHIST=100000
 setopt appendhistory autocd extendedglob nomatch
 unsetopt beep

@@ -2,6 +2,7 @@
    // General coc settings
    // suggestion settings
      "suggest.timeout": 1000,
+     "r.lsp.debug": true,
      "suggest.minTriggerInputLength": 5,
 
    // Rust settings 

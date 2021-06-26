@@ -22,8 +22,13 @@ URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
 URxvt.scrollBar:                false
 URxvt.fading: 10
-URxvt.font: xft:MesloLGS NF:size=10
+URxvt.font: xft:MesloLGS NF:size=9
 URxvt.letterSpace: -1
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.resize-font.step: 1
 
 ! transparency
 URxvt.transparent: true

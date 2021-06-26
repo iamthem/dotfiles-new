@@ -1,8 +1,9 @@
-fzf-preview.AllBuffers
 fzf-preview.ProjectFiles
-fzf-preview.BufferLines
-fzf-preview.DirectoryFiles
 fzf-preview.GitActions
+fzf-preview.AllBuffers
+fzf-preview.BufferLines
+fzf-preview.GitLogs
+fzf-preview.DirectoryFiles
 rust-analyzer.run
 rust-analyzer.reload
 fzf-preview.GitStashes

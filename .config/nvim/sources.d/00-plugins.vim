@@ -6,7 +6,7 @@ Plug 'junegunn/vim-plug'
 "==================================================
 " R Plugins 
 "==================================================
-Plug 'jalvesaq/Nvim-R'  " swissknife for vim and R communication
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}  " swissknife for vim and R communication
 Plug 'chrisbra/csv.vim' " for viewing data directly in vim R (Nvim-R)
 Plug 'gaalcaras/ncm-R' " Auto completion  
 "==================================================
@@ -21,7 +21,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "==================================================
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " Python syntax highlighting and more
 Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}  " Python indent (follows the PEP8 style)
-Plug 'jalvesaq/vimcmdline'                               " Live REPL
 Plug 'sansyrox/vim-python-virtualenv'
 "==================================================
 "" Lisp  
@@ -34,7 +33,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
 Plug 'GCBallesteros/vim-textobj-hydrogen'           " Syntax highlighting inside code chunks
 Plug 'GCBallesteros/jupytext.vim'                   " Convert .ipynb to text files 
-Plug 'GCBallesteros/iron.nvim'                      " Live REPL
+Plug 'hkupty/iron.nvim'                             " Repl 
 "==================================================
 " Movement  
 "==================================================
