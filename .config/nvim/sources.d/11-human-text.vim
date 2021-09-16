@@ -19,6 +19,9 @@ set spellfile=$HOME/.config/nvim/en.utf-8.add
 "==================================================
 augroup lexical
   autocmd!
+  autocmd BufRead,BufNewFile *.txt setlocal spell 
+  autocmd BufRead,BufNewFile *.md setlocal spell 
+  autocmd BufRead,BufNewFile *.tex setlocal spell 
   autocmd BufRead,BufNewFile *.txt call lexical#init()
   autocmd BufRead,BufNewFile *.\.md call lexical#init()
   autocmd BufRead,BufNewFile *.tex call lexical#init()
@@ -35,7 +38,6 @@ let g:lexical#dictionary = ['~/.config/nvim/english-words/words.txt', '~/.config
 " <c-x-s> to find suggestions. (Insert Mode) 
 " <c-n> go down suggestion
 " <c-p> go up suggestion. 
-
 " `zg` Mark as good word 
 
  

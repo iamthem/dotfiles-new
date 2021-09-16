@@ -104,6 +104,7 @@ Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-bufword'
 Plug 'roxma/nvim-yarp' 
 "==================================================
 " Misc
