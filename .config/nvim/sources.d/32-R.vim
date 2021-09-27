@@ -37,9 +37,5 @@ let rout_color_index    = 'ctermfg=186'
 
 let g:Rout_more_colors = 1
 
-"Custom key-bindings
-nmap <LocalLeader>n <Plug>RNextRChunk
-nmap <LocalLeader>N <Plug>RPreviousRChunk
-
 " Create new R chunk 
 autocmd filetype rmd inoremap <C-c> ```{r}```<Left><Left><Left><CR><C-o>O<tab>

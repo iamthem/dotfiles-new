@@ -6,7 +6,7 @@ autocmd FileType python nmap <C-s> :IronRepl<CR>
 autocmd FileType python nmap <C-t>    <Plug>(iron-send-motion)
 autocmd FileType python vmap <C-v>    <Plug>(iron-visual-send)
 autocmd FileType python nmap <C-r>    <Plug>(iron-repeat-cmd)
-autocmd FileType python nmap <C-l>    <Plug>(iron-send-line)
+autocmd FileType python nmap <LocalLeader>l    <Plug>(iron-send-line)
 autocmd FileType python nmap <C-<CR>> <Plug>(iron-cr)
 autocmd FileType python nmap <C-z>    <plug>(iron-interrupt)
 autocmd FileType python nmap <C-q>    <Plug>(iron-exit)
@@ -24,9 +24,14 @@ let g:jupytext_style = 'hydrogen'
 " Send cell to IronRepl and move to next cell.
 " Depends on the text object defined in vim-textobj-hydrogen
 " You first need to be connected to IronRepl
-nmap ]x ctrih]h<CR><CR>
+autocmd FileType python nmap <LocalLeader>cc ctrih]h<CR><CR> 
+autocmd FileType python nmap <LocalLeader>n ]h<CR>
+autocmd FileType python nmap <LocalLeader>N [h<CR>
 
 luafile $HOME/.config/nvim/plugins.lua
 
 "Set %matplotlib qt 
 "to display graphs in notebooks 
+
+" Create new R chunk 
+autocmd filetype python inoremap <C-c> # %%<CR><C-o>x

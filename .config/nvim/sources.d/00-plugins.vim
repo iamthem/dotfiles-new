@@ -110,7 +110,6 @@ Plug 'roxma/nvim-yarp'
 " Misc
 "==================================================
 Plug '907th/vim-auto-save'                    " Autosave files on certain events
-Plug 'itchyny/calendar.vim'                   " Calendar and Tasks
 Plug 'udalov/kotlin-vim', { 'for': 'kotlin' } " Kotlin
 Plug 'ludovicchabant/vim-gutentags'           " Tags
 Plug 'AndrewRadev/bufferize.vim'              " Run command and show output in buffer
