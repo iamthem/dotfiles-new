@@ -3,7 +3,7 @@ autocmd FileType python map <buffer> <C-P> :w<CR>:exec '!python3' shellescape(@%
 
 " REPL Config
 autocmd FileType python nmap <C-s> :IronRepl<CR>
-autocmd FileType python nmap <C-t>    <Plug>(iron-send-motion)
+"autocmd FileType python nmap <C-t>    <Plug>(iron-send-motion)
 autocmd FileType python vmap <C-v>    <Plug>(iron-visual-send)
 autocmd FileType python nmap <C-r>    <Plug>(iron-repeat-cmd)
 autocmd FileType python nmap <LocalLeader>l    <Plug>(iron-send-line)

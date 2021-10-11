@@ -22,3 +22,6 @@ let g:ale_cpp_ccls_init_options = {
 \       'directory': '/tmp/ccls'
 \   }
 \ }
+
+
+let g:ale_pattern_options = {'.*\.Rmd$|.*\.R$': { 'ale_enabled': 0}}

@@ -130,7 +130,8 @@ fh() {
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #Use vim as MANPAGER
-export MANPAGER="nvim -c 'set ft=man' -"
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
 
 #wal settings
 #=============================
