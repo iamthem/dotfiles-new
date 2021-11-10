@@ -23,6 +23,7 @@ nnoremap gP :Git push
 
 " Git add current file 
 nnoremap gaf :Gw<CR>  
+
 nnoremap gds :Gvdiffsplit!<CR>  
 
 " Git diff shortcuts

@@ -85,3 +85,15 @@ set nu rnu
 let g:slime_target = "neovim"
 " type `:echo b:terminal_job_id` to get the job_id for that terminal
 
+"==================================================
+" nvim-gdb 
+"==================================================
+
+let g:nvimgdb_config_override = {
+  \ 'key_next': 'n',
+  \ 'key_step': 's',
+  \ 'key_finish': 'f',
+  \ 'key_continue': 'c',
+  \ 'key_until': 'u',
+  \ 'key_breakpoint': 'b',
+  \ }
