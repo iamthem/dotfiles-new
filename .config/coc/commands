@@ -1,8 +1,13 @@
+markdown-preview-enhanced.syncPreview
+markdown-preview-enhanced.openPreview
+fzf-preview.AllBuffers
+fzf-preview.DirectoryFiles
+ltex.showStatusInformation
+ltex.checkSelection
+latex.Build
 fzf-preview.BufferLines
 fzf-preview.ProjectFiles
-fzf-preview.AllBuffers
 fzf-preview.GitActions
-fzf-preview.DirectoryFiles
 fzf-preview.GitLogs
 rust-analyzer.run
 rust-analyzer.reload

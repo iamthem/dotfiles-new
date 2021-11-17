@@ -1,3 +1,8 @@
 {
-  "lastUpdate": 1636554830917
+  "lastUpdate": 1637170683980,
+  "extension": {
+    "coc-browser": {
+      "disabled": true
+    }
+  }
 }

@@ -8,6 +8,9 @@ let g:vimtex_quickfix_open_on_warning = 0
 
 au FileType tex let b:AutoPairs = AutoPairsDefine({'$': '$'})
 
+" Spelling + grammar checking for latex
+let g:coc_filetype_map = {'tex': 'latex'}
+
 "Compilation options for latexmk
 let g:vimtex_compiler_latexmk = {
     \ 'build_dir' : '',

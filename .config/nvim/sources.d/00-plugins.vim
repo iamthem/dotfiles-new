@@ -14,8 +14,11 @@ Plug 'gaalcaras/ncm-R' " Auto completion
 "==================================================
 Plug 'dense-analysis/ale'               "Linting 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Coc extensions: coc-snippets, coc-json, coc-vimtex, coc-rust-analyzer,
-"                coc-r-lsp, coc-python, coc-fzf-preview, coc-texlab 
+"Coc extensions: coc-snippets, coc-json, coc-rust-analyzer,
+"                coc-r-lsp, coc-python, coc-fzf-preview, coc-texlab,
+"                coc-webview, coc-ultisnips, coc-snippets, coc-pyright,
+"                coc-pydocstring, coc-markmap, coc-markdown-preview-enhanced 
+"                coc-ltex, coc-browser, coc-jedi
 "==================================================
 "" Python 
 "==================================================
@@ -78,7 +81,7 @@ Plug 'danilo-augusto/vim-afterglow'
 "==================================================
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 "==================================================
 " Git
 "==================================================
