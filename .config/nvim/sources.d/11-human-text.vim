@@ -44,5 +44,5 @@ let g:lexical#dictionary = ['~/.config/nvim/english-words/words.txt', '~/.config
 "==================================================
 " Preview markdown 
 "==================================================
-nnoremap <silent><nowait> <localleader>ll :<C-u>CocCommand markdown-preview-enhanced.openPreview<cr>
-nnoremap <silent><nowait> <localleader>ss :<C-u>CocCommand markdown-preview-enhanced.syncPreview<cr>
+autocmd FileType markdown nnoremap <silent><nowait> <localleader>ll :<C-u>CocCommand markdown-preview-enhanced.openPreview<cr>
+autocmd FileType markdown nnoremap <silent><nowait> <localleader>ss :<C-u>CocCommand markdown-preview-enhanced.syncPreview<cr>

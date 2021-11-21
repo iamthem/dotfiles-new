@@ -3,6 +3,9 @@
   "extension": {
     "coc-browser": {
       "disabled": true
+    },
+    "coc-webview": {
+      "disabled": true
     }
   }
 }

@@ -68,7 +68,7 @@ nmap <leader>F  <Plug>(coc-format-selected)
 "==================================================
 " Applying codeAction to the selected region.
 xmap <leader>a  <Plug>(coc-codeaction-selected)   
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-line)
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)     
 " Apply AutoFix to problem on the current line.
