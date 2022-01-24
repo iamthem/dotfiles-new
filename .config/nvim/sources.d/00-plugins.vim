@@ -16,7 +16,7 @@ Plug 'dense-analysis/ale'               "Linting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Coc extensions: coc-snippets, coc-json, coc-rust-analyzer,
 "                coc-r-lsp, coc-fzf-preview, coc-texlab,
-"                coc-webview, coc-ultisnips, coc-snippets, coc-pyright,
+"                coc-webview, coc-ultisnips, coc-pyright,
 "                coc-pydocstring, coc-markmap, coc-markdown-preview-enhanced 
 "                coc-ltex, coc-browser, coc-jedi
 "==================================================
