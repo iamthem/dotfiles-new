@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')     
+call plug#begin('/home/ubuntu/.local/share/nvim/site/autoload')     
 "==================================================
 "Plug in Manager 
 "==================================================
@@ -32,11 +32,11 @@ Plug 'kovisoft/slimv'
 "==================================================
 "" Jupyter 
 "==================================================
-Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-line'
-Plug 'GCBallesteros/vim-textobj-hydrogen'           " Syntax highlighting inside code chunks
-Plug 'GCBallesteros/jupytext.vim'                   " Convert .ipynb to text files 
 Plug 'hkupty/iron.nvim'                             " Repl 
+Plug 'GCBallesteros/jupytext.vim'                   " Convert .ipynb to text files 
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-user'
+Plug 'GCBallesteros/vim-textobj-hydrogen'           " Syntax highlighting inside code chunks
 "==================================================
 " Movement  
 "==================================================

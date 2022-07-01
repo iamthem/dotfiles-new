@@ -1,12 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
-let g:netrw_dirhist_8='/home/junaikin/Builds/textbooks'
-let g:netrw_dirhist_7='/home/junaikin/Poems'
-let g:netrw_dirhist_6='/home/junaikin/.config/nvim'
-let g:netrw_dirhist_5='/home/junaikin/Builds/data_abstraction_source_code/Chapter19'
-let g:netrw_dirhist_4='/home/junaikin/Builds/data_abstraction_source_code'
-let g:netrw_dirhist_3='/home/junaikin/Builds/data_abstraction_source_code/Chapter18'
-let g:netrw_dirhist_2='/home/junaikin/Builds/data_abstraction_source_code'
-let g:netrw_dirhist_1='/home/junaikin/Builds/data_abstraction_source_code/Chapter20'
-let g:netrw_dirhist_0='/home/junaikin/Builds/data_abstraction_source_code'
-let g:netrw_dirhist_9='/home/junaikin/Builds/data_abstraction_source_code/Chapter18'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/ubuntu/.config/nvim/sources.d'
