@@ -9,7 +9,7 @@ let g:jupytext_style = 'hydrogen'
 autocmd filetype python inoremap <C-c> # %%<CR><C-o>x
 
 "Host prog
-let g:python3_host_prog = "/home/ubuntu/anaconda3/envs/pytorch_env/bin/python3"
+let g:python3_host_prog = "/home/osg-leandro/miniconda3/envs/torch+audio/bin/python"
 
 " REPL Config
 autocmd FileType python nmap <C-s> :IronRepl<CR>

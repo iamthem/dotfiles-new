@@ -9,7 +9,7 @@ iron.setup {
     -- Your repl definitions come here
     repl_definition = {
       python = {
-        command = {"/home/ubuntu/anaconda3/envs/pytorch_env/bin/ipython"}
+        command = {"/home/osg-leandro/miniconda3/envs/torch+audio/bin/ipython"}
       }
     },
     repl_open_cmd = 'belowright 15 split',

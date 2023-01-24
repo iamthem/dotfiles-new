@@ -123,3 +123,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Display Runtime Coc log 
 nnoremap <silent><nowait> <space>l  :<C-u>CocInfo<CR>
+
+"==================================================
+" set color of type hints 
+"==================================================
+hi CocInlayHint guifg=gray

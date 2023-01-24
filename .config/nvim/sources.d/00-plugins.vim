@@ -1,4 +1,4 @@
-call plug#begin('/home/ubuntu/.local/share/nvim/site/autoload')     
+call plug#begin('/home/osg-leandro/.local/share/nvim/site/autoload')     
 "==================================================
 "Plug in Manager 
 "==================================================
@@ -10,25 +10,11 @@ Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}  " swissknife for vim and R communi
 Plug 'chrisbra/csv.vim' " for viewing data directly in vim R (Nvim-R)
 Plug 'gaalcaras/ncm-R' " Auto completion  
 "==================================================
-" Language engines
-"==================================================
-Plug 'dense-analysis/ale'               "Linting 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Coc extensions: coc-snippets, coc-json, coc-rust-analyzer,
-"                coc-r-lsp, coc-fzf-preview, coc-texlab,
-"                coc-webview, coc-ultisnips, coc-pyright,
-"                coc-pydocstring, coc-markmap, coc-markdown-preview-enhanced 
-"                coc-ltex, coc-browser, coc-jedi
-"==================================================
 "" Python 
 "==================================================
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' } " Python syntax highlighting and more
 Plug 'Vimjas/vim-python-pep8-indent', {'for': 'python'}  " Python indent (follows the PEP8 style)
 Plug 'sansyrox/vim-python-virtualenv'
-"==================================================
-"" Lisp  
-"==================================================
-Plug 'kovisoft/slimv'
 "==================================================
 "" Jupyter 
 "==================================================
@@ -67,12 +53,6 @@ Plug 'itchyny/vim-highlighturl'        " Highlight URLs inside vim
 Plug 'michaeljsmith/vim-indent-object' " Add indent object for vim (useful for languages like Python)
 Plug 'godlygeek/tabular'               " Line things up nicely
 Plug 'ryanoasis/vim-devicons'          " Cool icons everywhere!
-"==================================================
-" Tex
-"==================================================
-Plug 'lervag/vimtex'
-Plug 'Konfekt/FastFold'
-"==================================================
 " Theme  
 "==================================================
 Plug 'danilo-augusto/vim-afterglow'
@@ -81,7 +61,16 @@ Plug 'danilo-augusto/vim-afterglow'
 "==================================================
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+"==================================================
+" Language engines
+"==================================================
+Plug 'dense-analysis/ale'               "Linting 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Coc extensions: coc-snippets, coc-json, coc-rust-analyzer,
+"                coc-r-lsp, coc-fzf-preview, coc-texlab,
+"                coc-webview, coc-ultisnips, coc-pyright,
+"                coc-pydocstring, coc-markmap, coc-markdown-preview-enhanced 
+"                coc-ltex, coc-browser, coc-jedi
 "==================================================
 " Git
 "==================================================
@@ -89,17 +78,6 @@ Plug 'airblade/vim-gitgutter'       "Hunk hunk management
 Plug 'tpope/vim-fugitive'           "Run run bugs
 Plug 'tpope/vim-rhubarb'            "The Hub to the Git
 Plug 'jreybert/vimagit'             "See changes jump to 'em
-"==================================================
-" Rust 
-"==================================================
-Plug 'cespare/vim-toml'         " Vim syntax for TOML
-Plug 'rust-lang/rust.vim'       " Vim syntax for Rust
-Plug 'jpalardy/vim-slime'       " Vim REPL support 
-"==================================================
-" C (++) 
-"==================================================
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 "==================================================
 " Snips 
 "==================================================
