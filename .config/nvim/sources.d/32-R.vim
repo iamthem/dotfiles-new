@@ -1,3 +1,4 @@
+let R_path = '/home/osg-leandro/miniconda3/envs/py3Renv/bin'
 "set rmarkdown file type for safety
 au BufNewFile,BufRead *.Rmd set filetype=rmd
 
