@@ -1,14 +1,17 @@
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv zsh-autosuggestions) 
+plugins=(git virtualenv zsh-autosuggestions zsh-syntax-highlighting) 
 PROMPT_GEOMETRY_COLORIZE_ROOT=true
 PROMPT_GEOMETRY_EXEC_TIME=true
+
+source $ZSH/oh-my-zsh.sh
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -54,10 +57,6 @@ zstyle ':completion:*' rehash true
 
 autoload -Uz compinit
 compinit
-
-#Syntax highlighting 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 #       Aliases
 # ===================
@@ -118,8 +117,8 @@ setopt PUSHD_IGNORE_DUPS
 ## This reverts the +/- operators.
 setopt PUSHD_MINUS
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source ~/.oh-my-zsh/plugins/fzf/fzf.plugin.zsh
+#source ~/.oh-my-zsh/plugins/fzf/shell/completion.zsh
 
 # Easier history searching using fzf
 fh() {
@@ -138,7 +137,7 @@ export MANWIDTH=999
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 # Key mappings for auto-suggestions
 #=================================
@@ -149,7 +148,8 @@ bindkey '^t' autosuggest-toggle
 
 # ADD TO EXECUTION PATH
 #=================================
-export PATH=$PATH:/home/junaikin/.cargo/bin:/home/junaikin/.local/bin
+#export PATH=$PATH:/usr/local/cuda-11.8/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
 # Docker socket environment variable
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
 export GOPATH="$HOME/go"
@@ -157,5 +157,18 @@ export PATH="$PATH:$GOPATH/bin"
 
 # SHELL THEME
 #=================================
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
+__conda_setup="$('/home/junaikin/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/junaikin/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/junaikin/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/junaikin/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+conda activate rl-env-may23
