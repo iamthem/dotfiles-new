@@ -10,7 +10,7 @@ let g:gitgutter_override_sign_column_highlight = 1
 
 nmap gj <Plug>(GitGutterNextHunk)
 nmap gk <Plug>(GitGutterPrevHunk)
-nmap ghd <Plug>(GitGutterPreviewHunk)
+nmap ghp <Plug>(GitGutterPreviewHunk)
 nmap ghs <Plug>(GitGutterStageHunk)
 nmap ghu <Plug>(GitGutterUndoHunk)
 nmap ggt :GitGutterToggle<CR>

@@ -1,4 +1,4 @@
-call plug#begin('/home/ubuntu/.local/share/nvim/site/autoload')     
+call plug#begin('/Users/junaikin/.local/share/nvim/site/autoload')     
 "==================================================
 "Plug in Manager 
 "==================================================
@@ -32,11 +32,12 @@ Plug 'kovisoft/slimv'
 "==================================================
 "" Jupyter 
 "==================================================
-Plug 'hkupty/iron.nvim'                             " Repl 
-Plug 'GCBallesteros/jupytext.vim'                   " Convert .ipynb to text files 
+Plug 'Vigemus/iron.nvim'                             " Repl 
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
 Plug 'GCBallesteros/vim-textobj-hydrogen'           " Syntax highlighting inside code chunks
+Plug 'GCBallesteros/jupytext.nvim'           " Convert .ipynb to text files 
+Plug 'michaelb/sniprun', {'do': 'bash install.sh'}
 "==================================================
 " Movement  
 "==================================================
@@ -99,7 +100,7 @@ Plug 'jpalardy/vim-slime'       " Vim REPL support
 " C (++) 
 "==================================================
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+"Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 "==================================================
 " Snips 
 "==================================================
