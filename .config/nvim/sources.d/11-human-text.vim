@@ -20,7 +20,7 @@ set spellfile=$HOME/.config/nvim/en.utf-8.add
 augroup lexical
   autocmd!
   autocmd BufRead,BufNewFile *.txt setlocal spell 
-  autocmd BufRead,BufNewFile *.md setlocal spell 
+  autocmd BufRead,BufNewFile *.\.md setlocal spell 
   autocmd BufRead,BufNewFile *.tex setlocal spell 
   autocmd BufRead,BufNewFile *.txt call lexical#init()
   autocmd BufRead,BufNewFile *.\.md call lexical#init()

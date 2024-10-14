@@ -40,3 +40,6 @@ let g:Rout_more_colors = 1
 
 " Create new R chunk 
 autocmd filetype rmd inoremap <C-c> ```{r}```<Left><Left><Left><CR><C-o>O<tab>
+
+" Fix commentstring for R files
+autocmd BufNewFile,BufRead *.R setlocal commentstring=#\ %s 

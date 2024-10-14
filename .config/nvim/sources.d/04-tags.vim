@@ -1,3 +1,4 @@
+let g:gutentags_ctags_executable = '/opt/homebrew/bin/ctags'
 let g:gutentags_project_root = ['.git']
 
 " Cache directory for tag files (instead of writing them @ root of project)

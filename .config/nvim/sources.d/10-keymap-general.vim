@@ -62,10 +62,16 @@ nmap <expr> n sneak#is_sneaking() ? '<Plug>Sneak_;' : 'n'
 " Terminal mode  
 "==================================================
 "Exit terminal with <Esc>
-tnoremap <Esc> <C-\><C-n>       
+tnoremap <Esc> <C-\><C-n>
 
 "==================================================
 " Jump to end and beginning of lines in insert mode 
 "==================================================
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
+
+"==================================================
+" Harpooning (NOT FUNCTIONAL)
+"==================================================
+" nnoremap <leader>h :lua require("harpoon.ui").toggle_quick_menu()<CR>
+" nnoremap <leader>m :lua require("harpoon.ui").add_file()
