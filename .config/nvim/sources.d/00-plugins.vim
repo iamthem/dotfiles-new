@@ -68,6 +68,7 @@ Plug 'itchyny/vim-highlighturl'        " Highlight URLs inside vim
 Plug 'michaeljsmith/vim-indent-object' " Add indent object for vim (useful for languages like Python)
 Plug 'godlygeek/tabular'               " Line things up nicely
 Plug 'ryanoasis/vim-devicons'          " Cool icons everywhere!
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "==================================================
 " Tex
 "==================================================
